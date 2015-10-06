@@ -172,7 +172,7 @@
             // console.log('设备上报:' +  message.payloadString);
             msgjson = $.parseJSON(message.payloadString);
             // console.log('温度 ' +  msgjson.dht11_temperature);
-            var tempval = msgjson.dht11_temperature;
+            var tempval = msgjson.mq2_burn_gas;
             // console.log('温度2 ' +  tempval);
             if("undefined" != typeof(tempval)){
                 // 显示温度
@@ -180,13 +180,13 @@
                 // 显示湿度
                 $("#humiid").text(msgjson.mq2_burn_gas+'%');
                 // 温度超过29则红灯亮，20-29之间则绿灯亮，低于20黄灯亮
-                if(tempval > "29"){
+                if(tempval > "2000"){
                     led_red();
                     $("#rgbimgid").attr("src", "./image/02-red.svg");
-                }else if(tempval < "30" && (tempval > "19")){
+                }else if(tempval < "2000" && (tempval > "300")){
                     led_green();
                     $("#rgbimgid").attr("src", "./image/02-green.svg");
-                }else if(tempval < "20"){
+                }else if(tempval < "300"){
                     led_yellow();
                     $("#rgbimgid").attr("src", "./image/02-yellow.svg");
                 }
