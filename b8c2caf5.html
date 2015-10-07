@@ -180,15 +180,16 @@
                 // 显示湿度
                 $("#humiid").text(msgjson.mq2_burn_gas+'%');
                 // 温度超过29则红灯亮，20-29之间则绿灯亮，低于20黄灯亮
-                if(tempval > "2000"){
+                if(tempval > "1500"){
                     led_red();
                     $("#rgbimgid").attr("src", "./image/02-red.svg");
-                }else if(tempval < "2000" && (tempval > "300")){
+                }else if(tempval < "1500" && (tempval > "300")){
+                     led_yellow();
+                    $("#rgbimgid").attr("src", "./image/02-yellow.svg");
+                }else if(tempval < "300"){
                     led_green();
                     $("#rgbimgid").attr("src", "./image/02-green.svg");
-                }else if(tempval < "300"){
-                    led_yellow();
-                    $("#rgbimgid").attr("src", "./image/02-yellow.svg");
+                   
                 }
             }
         }
