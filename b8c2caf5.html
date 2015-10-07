@@ -78,7 +78,7 @@
                     <!-- <td valign="middle" align="right"><img src="./image/01-temperature.svg" alt=""></td
                     <td valign="middle" align="left">&nbsp;&nbsp;<span>温度</span><br/>&nbsp;&nbsp;<span class="tempcls" id="tempid">28℃</span></td> -->
                     <td valign="middle" align="right"><img src="./image/01-mq2gas.svg" alt=""></td>
-                    <td valign="middle" align="left">&nbsp;&nbsp;<span>可燃气体浓度</span><br/>&nbsp;&nbsp;<span class="humicls" id="humiid">42%</span></td>
+                    <td valign="middle" align="left">&nbsp;&nbsp;<span>可燃气体浓度</span><br/>&nbsp;&nbsp;<span class="humicls" id="humiid">100ppm</span></td>
                 </tr>
             </table>
         </div>        
@@ -176,9 +176,9 @@
             // console.log('温度2 ' +  tempval);
             if("undefined" != typeof(tempval)){
                 // 显示温度
-                $("#tempid").text(tempval+"℃");
+               // $("#tempid").text(tempval+"℃");
                 // 显示湿度
-                $("#humiid").text(msgjson.mq2_burn_gas+'%');
+                $("#humiid").text(msgjson.mq2_burn_gas+'ppm');
                 // 温度超过29则红灯亮，20-29之间则绿灯亮，低于20黄灯亮
                 if(tempval > "1500"){
                     led_red();
