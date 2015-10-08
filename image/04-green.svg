@@ -4,10 +4,11 @@
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
 <circle fill="#8AB42F" cx="29.969" cy="29.969" r="29.681"/>
-<path fill="#FFFFFF" d="M29.688,14.68c-4.888,0-8.851,3.962-8.851,8.85v11.625h1.351V23.53c0-4.142,3.357-7.5,7.5-7.5
-	c4.142,0,7.5,3.358,7.5,7.5v11.625h1.35V23.53C38.537,18.642,34.575,14.68,29.688,14.68z"/>
-<rect x="24.343" y="21.917" fill="#FFFFFF" width="10.687" height="1.25"/>
-<rect x="24.343" y="24.917" fill="#FFFFFF" width="10.687" height="1.25"/>
-<rect x="24.343" y="27.917" fill="#FFFFFF" width="10.687" height="1.25"/>
-<rect x="24.343" y="30.917" fill="#FFFFFF" width="10.687" height="1.25"/>
+<path fill="#FFFFFF" d="M29.688,4.443c-9.776,0-17.702,7.924-17.702,17.699v23.249h2.702V22.143c0-8.283,6.714-15,15-15
+	c8.284,0,14.999,6.717,14.999,15v23.249h2.701V22.143C47.387,12.367,39.463,4.443,29.688,4.443z"/>
+<rect x="19" y="16.792" fill="#FFFFFF" width="21.374" height="2.5"/>
+<rect x="19" y="23.317" fill="#FFFFFF" width="21.374" height="2.5"/>
+<rect x="19" y="29.842" fill="#FFFFFF" width="21.374" height="2.5"/>
+<rect x="19" y="36.367" fill="#FFFFFF" width="21.374" height="2.5"/>
+<rect x="19.313" y="42.892" fill="#FFFFFF" width="21.374" height="2.5"/>
 </svg>
